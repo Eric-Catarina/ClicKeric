@@ -1,25 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.css'
+import React, { useState } from 'react';
 
-function App() {
+
+export default function App() {
+  const [cliques, setCliques] = useState(0);
+
+  function BotaoFoiClicado() {
+    setCliques(cliques + 1);
+  }
+
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+    <main>
+      <div className='divBody'>
+        <div className='divCentral col-10 card position-absolute top-50 start-50 translate-middle'>
+          <div className='divCentral card-body text-center col-12 neumorfico'>
+            <h1 className='card-title text-white'>Clique na Área abaixo ! </h1>
+            <h1 className='card-title text-white-50'>Cliques: {cliques} </h1>
 
-export default App;
+            <button onClick={BotaoFoiClicado} className=
+              'botaoCliques col-12 btn  neumorfico'>
+              React ⚛️ + Éric ⚡ + Replit 🌀
+            </button>
+          </div>
+        </div>
+      </div>
+
+
+
+    </main>
+  )
+}

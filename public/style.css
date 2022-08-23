@@ -1,0 +1,38 @@
+
+
+.botaoCliques {
+    height: 150px;
+    border-radius: 50px !important;
+    background: #283048 !important;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #859398, #283048);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #859398, #283048) !important; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+
+}
+
+.botaoNeumorfico {
+    box-shadow: 5px 5px 10px #411c15, 0px 0px 0px #d1caf2;
+    --nm: 6px 6px 16px 0 rgba(0, 0, 0, 0.2),
+    -6px -6px 16px 0 rgba(255, 255, 255, 1);
+    background: #cb2d3e;  
+}
+
+.divBody{
+    background: #0f0c29;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+width: 100vw;
+height: 100vh;
+}
+.divCentral{
+    border: 1px solid rgba(48, 43, 99, 0.3)  !important;
+    border-radius: 30px !important;
+            background-color: transparent !important;
+}
+.neumorfico{
+    border-radius: 50px;
+    background: rgb(48, 43, 99);
+    box-shadow:  7px 7px 12px #131128,
+                 -7px -7px 12px #373272;
+}
